@@ -4,13 +4,11 @@
 
 A simple tool for gathering performance stats about running NetLogo models.
 
-## How do you configure it?
-
-Change the model path (`workspace.open`), number of repetitions (outer `for`), and number of ticks (inner `for`) in the `HeadlessBenchmarker.scala` file.
-
 ## How do you run it?
 
-`sbt run`
+```sh
+sbt 'run "<path to your target .nlogo/.nlogox file>" <optional number of runs: default 20> <optional number of ticks per run; default: 1000>'
+```
 
 The result will be the number of milliseconds taken to run the whole thing.
 
