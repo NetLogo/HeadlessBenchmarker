@@ -12,6 +12,8 @@ Change the model path (`workspace.open`), number of repetitions (outer `for`), a
 
 `sbt run`
 
-## What do the results mean?
+The result will be the number of milliseconds taken to run the whole thing.
 
-They're the number of milliseconds taken to run the whole thing.
+## How can I configure which version of NetLogo it uses?
+
+Change the part of the `libraryDependencies` in `build.sbt` that says something like `"org.nlogo" % "netlogo" % "7.0.3"`.  It gets versions of NetLogo from [our Cloudsmith resolver](https://cloudsmith.io/~netlogo/repos/netlogo/packages/), so whatever versions are there are versions that you can use here.
