@@ -14,7 +14,7 @@ sbt 'run "<path>" <runCount> <tickCount>'
   * `<runCount>`: Number of runs to perform (optional; default: 20)
   * `<tickCount>`: Number of ticks per run (optional; default: 1000)
 
-The result will be the number of milliseconds taken to run the whole thing.
+The result will be the number of seconds taken to run the whole thing.
 
 ## How can I configure which version of NetLogo it uses?
 

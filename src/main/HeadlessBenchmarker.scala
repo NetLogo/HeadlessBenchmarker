@@ -21,7 +21,7 @@ object HeadlessBenchmarker {
     val end = System.nanoTime()
     workspace.dispose()
 
-    println((end - start) / 1e6)
+    println((end - start) / 1e9)
 
   }
 
