@@ -7,8 +7,12 @@ A simple tool for gathering performance stats about running NetLogo models.
 ## How do you run it?
 
 ```sh
-sbt 'run "<path to your target .nlogo/.nlogox file>" <optional number of runs: default 20> <optional number of ticks per run; default: 1000>'
+sbt 'run "<path>" <runCount> <tickCount>'
 ```
+
+  * `<path>`: Path to your target `.nlogo`/`.nlogox` file
+  * `<runCount>`: Number of runs to perform (optional; default: 20)
+  * `<tickCount>`: Number of ticks per run (optional; default: 1000)
 
 The result will be the number of milliseconds taken to run the whole thing.
 
